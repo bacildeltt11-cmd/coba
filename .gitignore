@@ -1,0 +1,5 @@
+.env
+.env.local
+vendor/
+.vercel
+*.log
