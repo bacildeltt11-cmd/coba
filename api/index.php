@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 /**
  * Vercel Serverless Function Entry Point for Manifest Cargo System
  */
@@ -34,3 +36,5 @@ if ($realPath && strpos($realPath, $rootPath) === 0 && is_file($realPath) && pat
     header('Content-Type: text/html; charset=utf-8');
     echo '<!DOCTYPE html><html lang="id"><head><title>404 Not Found</title><style>body{font-family:sans-serif;text-align:center;padding:50px;}</style></head><body><h1>404 - Halaman Tidak Ditemukan</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>';
 }
+
+ob_end_flush();

@@ -14,4 +14,3 @@ $version = '1.0.0';
 
 // Security
 $csrf_token_lifetime = 3600; // 1 hour in seconds
-

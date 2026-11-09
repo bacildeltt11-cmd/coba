@@ -75,5 +75,3 @@ function sanitize_string($str, $max_length = null) {
     }
     return $str;
 }
-?>
-

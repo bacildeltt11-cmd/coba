@@ -84,5 +84,3 @@ function countDocuments($collection, $filter = []) {
     $result = $cursor->toArray();
     return $result[0]->n ?? 0;
 }
-?>
-
